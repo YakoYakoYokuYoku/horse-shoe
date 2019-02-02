@@ -1,0 +1,18 @@
+[package]
+name = "HorseShoe"
+version = "0.1.0"
+authors = ["YakoYakoYokuYoku"]
+autobins = false
+
+[dependencies]
+num = "*"
+num-traits = "*"
+num-complex = "*"
+
+[[bin]]
+name = "numder"
+path = "src/numder.rs"
+
+# [lib]
+# name = "math"
+# path = "../RNT/src/math.rs"
