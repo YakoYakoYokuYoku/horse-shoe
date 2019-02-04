@@ -1,26 +1,20 @@
 [package]
-name = "HorseShoe"
+name = "horse-shoe"
 description = "A Rust Language Infinitesimal Calculus crate"
 homepage = "https://github.com/YakoYakoYokuYoku/Horse-Shoe"
 keywords = ["mathematics", "numerics", "calculus"]
 categories = ["algorithms", "science", "calculus"]
 license = "MIT"
 repository = "https://github.com/YakoYakoYokuYoku/Horse-Shoe"
-version = "0.1.0"
+version = "0.0.1"
 readme = "README.md"
 authors = ["YakoYakoYokuYoku"]
 autobins = false
 
 [dependencies]
-
-[dependencies.num-traits]
-version = "0.2.6"
-default-features = false
-
-[dependencies.num-complex]
-version = "0.2.1"
-default-features = false
+num-traits = { git = "https://github.com/YakoYakoYokuYoku/num-traits" }
+num-complex = { git = "https://github.com/YakoYakoYokuYoku/num-complex" }
 
 [lib]
-name = "lib"
-path = "src/lib.rs"
+name = "horseshoe"
+path = "src/horseshoe.rs"

@@ -1,8 +1,8 @@
-# <img alt="Horse-Shoe" src="logo.png">
+# <img alt="Horse Shoe" src="logo.png">
 
-# Horse-Shoe
+# Horse Shoe
 
-Horse-Shoe is a crate for `infinitesimal calculus` purely made in Rust.
+Horse Shoe is a crate for `infinitesimal calculus` purely made in Rust.
 
 ## Usage:
 
@@ -10,13 +10,13 @@ Add this to the `Cargo.toml`:
 
 ```toml
 [dependencies]
-horse-shoe = "*"
+horse-shoe = "0.0.1"
 ```
 
 and this:
 
 ```rust
-extern crate horse_shoe;
+extern crate horseshoe;
 ```
 
 ## Features:
