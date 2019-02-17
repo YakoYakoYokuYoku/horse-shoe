@@ -49,7 +49,3 @@ jobs:
   - script: cargo make workspace-ci-flow --no-workspace
     env: { CARGO_MAKE_RUN_CODECOV: true }
     displayName: Build and run tests
-  - script: |
-      cargo check --package HorseShoe
-    displayName: Check package
-    condition: eq(variables['rustup_toolchain'], 'stable')
