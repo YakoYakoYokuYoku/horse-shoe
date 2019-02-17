@@ -4,7 +4,7 @@ use self::nc::Complex;
 extern crate num_traits as nt;
 use self::nt::{cast::FromPrimitive, Num};
 
-use std::{ops::Neg, cmp::PartialOrd};
+use std::{cmp::PartialOrd, ops::Neg};
 
 use functions::Funcs;
 

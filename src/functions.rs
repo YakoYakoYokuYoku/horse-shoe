@@ -3,13 +3,17 @@ extern crate num_complex as nc;
 use self::nc::Complex;
 
 extern crate num_traits as nt;
-use self::nt::{cast::FromPrimitive, Num, NumCast, Float, float::{CommonFloat, FloatCore}};
+use self::nt::{
+    cast::FromPrimitive,
+    float::{CommonFloat, FloatCore},
+    Float, Num, NumCast,
+};
 
-use std::{f64, ops::Neg, cmp::PartialOrd};
+use std::{cmp::PartialOrd, f64, ops::Neg};
 
 pub trait Funcs<T>
 where
-    Self: FromPrimitive + Num + Copy + CommonFloat<Typo=T>,
+    Self: FromPrimitive + Num + Copy + CommonFloat<Typo = T>,
     T: PartialOrd,
 {
     fn legendre(z: Self, i: i8) -> Self {
@@ -79,12 +83,6 @@ where
     }
 }
 
-impl<T> Funcs<T> for T 
-where
-    T: PartialOrd + CommonFloat<Typo = T> + FromPrimitive
-{}
+impl<T> Funcs<T> for T where T: PartialOrd + CommonFloat<Typo = T> + FromPrimitive {}
 
-impl<T> Funcs<T> for Complex<T>
-where
-    T: FloatCore + Float + FromPrimitive
-{}
+impl<T> Funcs<T> for Complex<T> where T: FloatCore + Float + FromPrimitive {}
